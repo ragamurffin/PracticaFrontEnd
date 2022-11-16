@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pastelero</title>
+    <style>
+      * {
+        margin: 10;
+        padding: 10;
+        box-sizing: inherit;
+        text-align: justify;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(to top left, #b7b7b7, #e4e3e3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pateleria Cholo</h1>
+    </header>
+    <section>
+      <img src="/diseño gráfico.png" alt="Logo de la pasteleria de cholo" />
+
+      <h2>Menu</h2>
+      <h3>Sabore de Pasteles</h3>
+      <ul>
+        <li>Chocolate ................ $300</li>
+        <li>Moka ..................... $250</li>
+        <li>Fresa .................... $200</li>
+        <li>Rompope .................. $250</li>
+        <li>Oreo ..................... $350</li>
+      </ul>
+
+      <h3>Decoraciones de Pasteles</h3>
+      <ul>
+        <li>Dulce ................ $75</li>
+        <li>Flore ................ $50</li>
+        <li>Almendra ............. $50</li>
+      </ul>
+
+      <h3>Especiales</h3>
+      <dt>Pastel de Mandarina</dt>
+      <dd>Pastel con 10 mandarina</dd>
+      <dt>Pastel de Chocolate con Fresas</dt>
+      <dd>Pastel con sabor chocolate y 5 fresas</dd>
+      <dt>Pastel de Chocolate con Oreo</dt>
+      <dd>Pastel sabor a chocolate con oreo</dd>
+    </section>
+
+    <section>
+      <h2>Ubicacion</h2>
+      <table>
+        <tr>
+          <th>Ubicacion</th>
+          <th>Telefono</th>
+          <th>Horario</th>
+        </tr>
+        <tr>
+          <th>En los pepines</th>
+          <th>xxx-xxx-xxxx</th>
+          <th>L - S 8am - 6pm</th>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Pedidos</h2>
+      <h3>Haz tu pedido aqui</h3>
+
+      <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br /><br />
+
+        <label for="correo1">Correo Electronico</label><br />
+        <input
+          type="email"
+          id="correo1"
+          name="correo1"
+          placeholder=""
+        /><br /><br />
+
+        <label for="numero1">Telefono</label><br />
+        <input
+          type="tel"
+          id="numero1"
+          name="numero1"
+          maxlength="10"
+        /><br /><br />
+
+        <input
+          type="checkbox"
+          id="chocolate"
+          name="topping1"
+          value="Chocolate"
+        />
+        <label for="topping1">Chocolate</label>
+        <input
+          type="number"
+          id="chocolate"
+          name="chocolate"
+          placeholder="Cuanto quieres"
+        />
+        <br />
+        <input type="checkbox" id="moka" name="topping2" value="Moka" />
+        <label for="topping2">Moka</label>
+        <input
+          type="number"
+          id="moka"
+          name="moka"
+          placeholder="Cuanto quieres"
+        />
+        <br />
+        <input type="checkbox" id="fresa" name="topping3" value="Fresa" />
+        <label for="topping3">Fresa</label>
+        <input
+          type="number"
+          id="fresa"
+          name="fresa"
+          placeholder="Cuanto quieres"
+        />
+        <br />
+        <input type="checkbox" id="rompope" name="topping4" value="Rompope" />
+        <label for="topping4">Rompope</label>
+        <input
+          type="number"
+          id="rompope"
+          name="rompope"
+          placeholder="Cuanto quieres"
+        />
+        <br />
+        <input type="checkbox" id="topping5" name="oreo" value="Oreo" />
+        <label for="topping5">Oreo</label>
+        <input
+          type="number"
+          id="oreo"
+          name="oreo"
+          placeholder="Cuanto quieres"
+        />
+        <br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>
